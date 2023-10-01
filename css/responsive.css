@@ -11,7 +11,6 @@
         margin: auto;
         border-radius: 0;
         box-shadow: none;
-        
     }
 
     .container .esq {
@@ -50,35 +49,4 @@
     .container .dir {
         padding: 20px;
     }
-}
-
-
-/* Estilos para telas pequenas (exemplo: smartphones em orientação retrato) */
-@media (min-width: 481px) and (max-width: 576px) {
-    /* Adicione estilos específicos para telas pequenas aqui */
-}
-
-/* Estilos para telas médias (exemplo: tablets em orientação retrato) */
-@media (min-width: 577px) and (max-width: 768px) {
-    /* Adicione estilos específicos para telas médias aqui */
-}
-
-/* Estilos para telas médias (exemplo: tablets em orientação paisagem) */
-@media (min-width: 769px) and (max-width: 1024px) {
-    /* Adicione estilos específicos para telas médias aqui */
-}
-
-/* Estilos para telas grandes (exemplo: laptops e monitores desktop) */
-@media (min-width: 1025px) and (max-width: 1440px) {
-    /* Adicione estilos específicos para telas grandes aqui */
-}
-
-/* Estilos para telas muito grandes (exemplo: monitores widescreen) */
-@media (min-width: 1441px) and (max-width: 1920px) {
-    /* Adicione estilos específicos para telas muito grandes aqui */
-}
-
-/* Estilos para telas ultragrandes (exemplo: monitores 4K) */
-@media (min-width: 1921px) {
-    /* Adicione estilos específicos para telas ultragrandes aqui */
 }
