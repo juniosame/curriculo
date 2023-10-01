@@ -60,6 +60,10 @@
 }
 
 /* ------------------------------- POSICIONAMENTO ------------------------------- */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: var(--bg);
     display: flex;
