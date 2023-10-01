@@ -1,0 +1,564 @@
+/* ------------------------------- IMPORTS ------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Quantico:wght@400;700&family=Rajdhani:wght@400;600&display=swap');
+
+/* ------------------------------- RESET GERAL ------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ------------------------------- VARIAVEIS ------------------------------- */
+
+:root {
+
+
+    /* ----------------- FONTS ----------------- */
+
+    --fnt-titulo: Quantico, sans-serif;
+    --fnt-titulo2: 'Press Start 2P', sans-serif;
+    --fnt-span: 'Rajdhani', sans-serif;
+
+    /* ----------------- FONT SIZE ----------------- */
+
+    --fnt-sz-perfil-h2: 1.2em;
+    --fnt-sz-perfil-h2-spn: 0.7em;
+    --fnt-sz-tit: 1em;
+    --fnt-sz-perfil-ico: 18px;
+    --fnt-sz-perfil-spn: 0.8em;
+    --fnt-sz-perfil-gear: 25px;
+
+    /* ----------------- BACKGROUNDS ----------------- */
+
+    --bg: #6e50b6;
+    --bg-esq: linear-gradient(to bottom, #3c1079 50%, #24084d 100%);
+    --bg-dir: #2E2B2B;
+    /* --bg-por: #a79a9a8f; */
+    --bg-por: rgba(0, 0, 0, 0.1);
+    --bg-anim: #49d49f;
+    --bg-por-div: #00ff00;
+    --bg-html: #FF4500;
+    --bg-css: #00FFFF;
+    --bg-js: #FFFF00;
+    --bg-php: #7B68EE;
+    --bg-python: #1E90FF;
+
+    /* ----------------- PROGRESS BAR ----------------- */
+
+    --br: 15px 150px 15px 80px;
+    --br2: 15px 0px 0px 70px;
+
+    /* ----------------- COLOR ----------------- */
+
+    --cor-branco: #fff;
+    --cor-verde: #00FF7F;
+    --cor-line-anim: #00ffb3;
+    --cor-perfil-ico: #49d49f;
+    --cor-text: #F2F2F2;
+    --cor-h4: #07E3F9;
+    /* ----------------- SHADOW ----------------- */
+    --sd-perfil-img: 0 0 10px #222020;
+    --sd-container: 0 35px px #0000001a;
+
+    /* ----------------- BORDER ----------------- */
+
+    --bd-imgbx: 0.7px solid #353636;
+    --bd-txt: 1px solid #ffffff33;
+    --bd-por: 0.5px solid #ffffff8f;
+}
+
+/* ------------------------------- POSICIONAMENTO ------------------------------- */
+
+body {
+    background: var(--bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: var(--bg-dir);
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: var(--sd-container);
+    border-radius: var(--br);
+
+}
+
+.container .esq {
+    clip-path: polygon(50% 0, 90.28% 0, 90.28% 43.34%, 100% 50%, 100% 100%, 50% 100%, 0 100%, 0 50%, 0 0);
+    position: relative;
+    background: var(--bg-esq);
+    padding: 40px;
+    border-radius: var(--br2);
+}
+
+.txt_perfil {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 20px;
+    width: 220px;
+    border-bottom: var(--bd-txt);
+}
+
+.txt_perfil .imgBx {
+    position: relative;
+    left: 5%;
+    width: 200px;
+    height: 200px;
+    box-shadow: var(--sd-perfil-img);
+    border: var(--bd-imgbx);
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.txt_perfil .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.txt_perfil h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--cor-branco);
+    font-family: var(--fnt-titulo);
+    font-size: var(--fnt-sz-perfil-h2);
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.txt_perfil h2 span {
+    color: var(--cor-verde);
+    font-size: var(--fnt-sz-perfil-h2-spn);
+    font-weight: 300;
+}
+
+.infContato {
+    padding-top: 40px;
+}
+
+.titulo {
+    color: var(--cor-branco);
+    font-family: var(--fnt-titulo);
+    font-size: var(--fnt-sz-tit);
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.infContato ul {
+    position: relative;
+}
+
+.infContato ul li {
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.infContato ul li .ico {
+    display: inline-block;
+    width: 30px;
+    font-size: var(--fnt-sz-perfil-ico);
+    color: var(--cor-perfil-ico);
+}
+
+.infContato ul li span a,
+#city {
+    text-decoration: none;
+    color: var(--cor-branco);
+    font-family: var(--fnt-span);
+    font-size: var(--fnt-sz-perfil-spn);
+    font-weight: 600;
+}
+
+
+.infContato.edu li {
+    padding-bottom: 15px;
+}
+
+.infContato.edu h5 {
+    color: var(--cor-verde);
+    font-family: var(--fnt-titulo);
+    font-weight: 100;
+
+}
+
+.infContato.edu h4:nth-child(2) {
+    color: var(--cor-branco);
+    font-family: var(--fnt-span);
+    font-weight: 600;
+
+}
+
+.infContato.edu h4 {
+    color: var(--cor-branco);
+    font-family: var(--fnt-span);
+    font-weight: 300;
+
+}
+
+.infContato.ling span {
+    text-decoration: none;
+    color: var(--cor-branco);
+    font-family: var(--fnt-span);
+    text-transform: uppercase;
+    font-size: var(--fnt-sz-perfil-spn);
+    font-weight: 600;
+}
+
+.infContato.ling .por {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    border-radius: 3px;
+    background: var(--bg-por);
+    border: var(--bd-por);
+    display: block;
+    margin-top: 5px;
+}
+
+.infContato.ling .por div {
+    position: absolute;
+    top: 50%;
+    /* Centraliza verticalmente */
+    left: 1px;
+    max-width: 99%;
+    height: 70%;
+    border-radius: 2px;
+    background: var(--bg-por-div);
+    transform: translateY(-50%);
+    /* Corrige o deslocamento vertical */
+}
+
+.container .dir {
+    position: relative;
+    background: var(--bg-dir);
+    padding: 40px;
+    border-radius: var(--br);
+}
+
+.sobre {
+    margin-bottom: 50px;
+}
+
+.sobre:last-child {
+    margin-bottom: 0;
+}
+
+
+
+/* ------------------------------- ANIMAÇÃO ------------------------------- */
+
+
+
+.titulo-principal {
+    text-align: start;
+    color: #fff;
+    
+}
+
+.titulo-principal:after {
+    content: '|';
+    opacity: 1;
+    animation: pisca 2.7s infinite 5s; /* 5s de atraso antes de iniciar a animação */
+}
+
+/* Animação aplicada ao content referente à classe *.titulo-principal* resultando num efeito de cursor piscando. */
+
+@keyframes pisca {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+/* ------------------------------- ANIMAÇÃO ------------------------------- */
+
+
+.anim {
+    color: var(--cor-line-anim);
+    position: relative;
+    text-decoration: none;
+
+    cursor: pointer;
+
+}
+
+.anim::before {
+    content: '';
+    position: absolute;
+    width: 90%;
+    height: 1px;
+    border-radius: 4px;
+    background-color: var(--cor-line-anim);
+    bottom: 0;
+    left: -1;
+    top: 30px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+.anim:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.anim:hover .gear i.fa-cog {
+    animation: fa-spin 2s infinite linear;
+}
+
+@keyframes fa-spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+/* ------------------------------- ANIMAÇÃO ------------------------------- */
+
+.gear {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    font-size: var(--fnt-sz-perfil-gear);
+    color: var(--cor-verde);
+    margin: 5px;
+    top: -3px;
+    width: 30px;
+
+}
+
+.divgear {
+    display: inline-block;
+}
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+.titulo2 {
+    color: var(--cor-verde);
+    font-family: var(--fnt-titulo2);
+    font-size: 1.3em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+p {
+    color: var(--cor-text);
+    font-family: var(--fnt-titulo);
+}
+
+.sobre .box {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+.sobre .box .ano {
+    min-width: 120px;
+}
+
+.sobre .box .ano h5 {
+    text-transform: uppercase;
+    color: var(--cor-text);
+    font-family: var(--fnt-span);
+    font-size: 0.7em;
+    font-weight: 800;
+}
+
+.sobre .box .ano h5:last-child {
+    text-transform: uppercase;
+    color: var(--cor-text);
+    font-family: var(--fnt-span);
+    font-size: 1em;
+    font-weight: 100;
+}
+
+.sobre .box .txt h4 {
+    text-transform: uppercase;
+    color: var(--cor-h4);
+    font-family: var(--fnt-titulo);
+    font-weight: 600;
+}
+
+.skills .box {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* ----------------- Html ----------------- */
+
+.sobre #html h4 {
+    text-transform: uppercase;
+    font-family: var(--fnt-span);
+    color: var(--bg-html);
+    font-weight: 600;
+}
+
+.sobre .box .por div {
+    position: absolute;
+    top: 50%;
+    left: 1px;
+    max-width: 99%;
+    height: 70%;
+    border-radius: 2px;
+    background-color: var(--bg-html);
+    transform: translateY(-50%);
+    /* Corrige o deslocamento vertical */
+}
+
+/* ----------------- Css ----------------- */
+
+.sobre #css h4 {
+    text-transform: uppercase;
+    font-family: var(--fnt-span);
+    color: var(--bg-css);
+    font-weight: 600;
+}
+
+.sobre #css .por div {
+    position: absolute;
+    top: 50%;
+    left: 1px;
+    max-width: 99%;
+    height: 70%;
+    border-radius: 2px;
+    background-color: var(--bg-css);
+    transform: translateY(-50%);
+    /* Corrige o deslocamento vertical */
+}
+
+/* ----------------- JavaScript ----------------- */
+
+.sobre #js h4 {
+    text-transform: uppercase;
+    font-family: var(--fnt-span);
+    color: var(--bg-js);
+    font-weight: 600;
+}
+
+.sobre #js .por div {
+    position: absolute;
+    top: 50%;
+    left: 1px;
+    max-width: 99%;
+    height: 70%;
+    border-radius: 2px;
+    background-color: var(--bg-js);
+    transform: translateY(-50%);
+    /* Corrige o deslocamento vertical */
+}
+
+/* ----------------- PHP ----------------- */
+
+.sobre #php h4 {
+    text-transform: uppercase;
+    font-family: var(--fnt-span);
+    color: var(--bg-php);
+    font-weight: 600;
+}
+
+.sobre #php .por div {
+    position: absolute;
+    top: 50%;
+    left: 1px;
+    max-width: 99%;
+    height: 70%;
+    border-radius: 2px;
+    background-color: var(--bg-php);
+    transform: translateY(-50%);
+    /* Corrige o deslocamento vertical */
+}
+
+/* ----------------- Python ----------------- */
+
+.sobre #python h4 {
+    text-transform: uppercase;
+    font-family: var(--fnt-span);
+    color: var(--bg-python);
+    font-weight: 600;
+}
+
+.sobre #python .por div {
+    position: absolute;
+    top: 50%;
+    left: 1px;
+    max-width: 99%;
+    height: 70%;
+    border-radius: 2px;
+    background-color: var(--bg-python);
+    transform: translateY(-50%);
+    /* Corrige o deslocamento vertical */
+}
+
+/* ----------------- html ----------------- */
+
+
+
+
+
+
+.sobre .box .por {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    border-radius: 3px;
+    background-color: var(--bd-por);
+    border: var(--bd-por);
+    display: block;
+    margin-top: 5px;
+}
+
+
+.int ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.int ul li {
+    list-style: none;
+    color: var(--cor-text);
+    font-family: var(--fnt-titulo);
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.int ul li .fa {
+    color: var(--cor-h4);
+    font-size: 18px;
+    width: 20px;
+}
