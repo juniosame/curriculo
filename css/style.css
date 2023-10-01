@@ -25,7 +25,7 @@
 
     /* ----------------- BACKGROUNDS ----------------- */
     --bg: #6e50b6;
-    --bg-esq: linear-gradient(to bottom, #3c1079 50%, #24084d 100%);
+    --bg-esq: linear-gradient(to bottom, #3c1079, #24084d);
     --bg-dir: #2E2B2B;
     /* --bg-por: #a79a9a8f; */
     --bg-por: rgba(0, 0, 0, 0.1);
