@@ -1,9 +1,7 @@
 /* ------------------------------- IMPORTS ------------------------------- */
-
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Quantico:wght@400;700&family=Rajdhani:wght@400;600&display=swap');
 
 /* ------------------------------- RESET GERAL ------------------------------- */
-
 * {
     margin: 0;
     padding: 0;
@@ -11,18 +9,13 @@
 }
 
 /* ------------------------------- VARIAVEIS ------------------------------- */
-
 :root {
-
-
     /* ----------------- FONTS ----------------- */
-
     --fnt-titulo: Quantico, sans-serif;
     --fnt-titulo2: 'Press Start 2P', sans-serif;
     --fnt-span: 'Rajdhani', sans-serif;
 
     /* ----------------- FONT SIZE ----------------- */
-
     --fnt-sz-perfil-h2: 1.2em;
     --fnt-sz-perfil-h2-spn: 0.7em;
     --fnt-sz-tit: 1em;
@@ -31,7 +24,6 @@
     --fnt-sz-perfil-gear: 25px;
 
     /* ----------------- BACKGROUNDS ----------------- */
-
     --bg: #6e50b6;
     --bg-esq: linear-gradient(to bottom, #3c1079 50%, #24084d 100%);
     --bg-dir: #2E2B2B;
@@ -46,31 +38,28 @@
     --bg-python: #1E90FF;
 
     /* ----------------- PROGRESS BAR ----------------- */
-
     --br: 15px 150px 15px 80px;
     --br2: 15px 0px 0px 70px;
 
     /* ----------------- COLOR ----------------- */
-
     --cor-branco: #fff;
     --cor-verde: #00FF7F;
     --cor-line-anim: #00ffb3;
     --cor-perfil-ico: #49d49f;
     --cor-text: #F2F2F2;
     --cor-h4: #07E3F9;
+
     /* ----------------- SHADOW ----------------- */
     --sd-perfil-img: 0 0 10px #222020;
     --sd-container: 0 35px px #0000001a;
 
     /* ----------------- BORDER ----------------- */
-
     --bd-imgbx: 0.7px solid #353636;
     --bd-txt: 1px solid #ffffff33;
     --bd-por: 0.5px solid #ffffff8f;
 }
 
 /* ------------------------------- POSICIONAMENTO ------------------------------- */
-
 body {
     background: var(--bg);
     display: flex;
@@ -79,6 +68,7 @@ body {
     min-height: 100vh;
 }
 
+/* ------------------------------- CONTAINER ------------------------------- */
 .container {
     position: relative;
     width: 100%;
@@ -90,9 +80,9 @@ body {
     grid-template-columns: 1fr 2fr;
     box-shadow: var(--sd-container);
     border-radius: var(--br);
-
 }
 
+/* ------------------------------- ESQUERDA ------------------------------- */
 .container .esq {
     clip-path: polygon(50% 0, 90.28% 0, 90.28% 43.34%, 100% 50%, 100% 100%, 50% 100%, 0 100%, 0 50%, 0 0);
     position: relative;
@@ -101,6 +91,7 @@ body {
     border-radius: var(--br2);
 }
 
+/* ------------------------------- TEXTO PERFIL ------------------------------- */
 .txt_perfil {
     position: relative;
     display: flex;
@@ -111,6 +102,7 @@ body {
     border-bottom: var(--bd-txt);
 }
 
+/* ------------------------------- IMAGEM PERFIL ------------------------------- */
 .txt_perfil .imgBx {
     position: relative;
     left: 5%;
@@ -131,6 +123,7 @@ body {
     object-fit: cover;
 }
 
+/* ------------------------------- TÍTULO ------------------------------- */
 .txt_perfil h2 {
     display: flex;
     flex-direction: column;
@@ -149,6 +142,7 @@ body {
     font-weight: 300;
 }
 
+/* ------------------------------- INFORMAÇÕES DE CONTATO ------------------------------- */
 .infContato {
     padding-top: 40px;
 }
@@ -190,7 +184,6 @@ body {
     font-weight: 600;
 }
 
-
 .infContato.edu li {
     padding-bottom: 15px;
 }
@@ -199,21 +192,18 @@ body {
     color: var(--cor-verde);
     font-family: var(--fnt-titulo);
     font-weight: 100;
-
 }
 
 .infContato.edu h4:nth-child(2) {
     color: var(--cor-branco);
     font-family: var(--fnt-span);
     font-weight: 600;
-
 }
 
 .infContato.edu h4 {
     color: var(--cor-branco);
     font-family: var(--fnt-span);
     font-weight: 300;
-
 }
 
 .infContato.ling span {
@@ -249,6 +239,7 @@ body {
     /* Corrige o deslocamento vertical */
 }
 
+/* ------------------------------- DIREITA ------------------------------- */
 .container .dir {
     position: relative;
     background: var(--bg-dir);
@@ -264,16 +255,10 @@ body {
     margin-bottom: 0;
 }
 
-
-
-/* ------------------------------- ANIMAÇÃO ------------------------------- */
-
-
-
+/* ------------------------------- TÍTULO PRINCIPAL ------------------------------- */
 .titulo-principal {
     text-align: start;
     color: #fff;
-    
 }
 
 .titulo-principal:after {
@@ -283,7 +268,6 @@ body {
 }
 
 /* Animação aplicada ao content referente à classe *.titulo-principal* resultando num efeito de cursor piscando. */
-
 @keyframes pisca {
     0%, 100% {
         opacity: 1;
@@ -292,16 +276,13 @@ body {
         opacity: 0;
     }
 }
+
 /* ------------------------------- ANIMAÇÃO ------------------------------- */
-
-
 .anim {
     color: var(--cor-line-anim);
     position: relative;
     text-decoration: none;
-
     cursor: pointer;
-
 }
 
 .anim::before {
@@ -332,15 +313,10 @@ body {
     0% {
         transform: rotate(0deg);
     }
-
     100% {
         transform: rotate(360deg);
     }
 }
-
-
-
-/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 
 /* ------------------------------- ANIMAÇÃO ------------------------------- */
 
@@ -353,15 +329,13 @@ body {
     margin: 5px;
     top: -3px;
     width: 30px;
-
 }
 
 .divgear {
     display: inline-block;
 }
 
-/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
-
+/* ------------------------------- TÍTULO2 ------------------------------- */
 .titulo2 {
     color: var(--cor-verde);
     font-family: var(--fnt-titulo2);
@@ -372,11 +346,13 @@ body {
     display: inline-block;
 }
 
+/* ------------------------------- PARÁGRAFOS ------------------------------- */
 p {
     color: var(--cor-text);
     font-family: var(--fnt-titulo);
 }
 
+/* ------------------------------- SEÇÃO SOBRE ------------------------------- */
 .sobre .box {
     display: flex;
     flex-direction: row;
@@ -410,6 +386,7 @@ p {
     font-weight: 600;
 }
 
+/* ------------------------------- SEÇÃO SKILLS ------------------------------- */
 .skills .box {
     position: relative;
     width: 100%;
@@ -417,11 +394,9 @@ p {
     grid-template-columns: 120px 1fr;
     justify-content: center;
     align-items: center;
-
 }
 
-/* ----------------- Html ----------------- */
-
+/* ------------------------------- HTML ------------------------------- */
 .sobre #html h4 {
     text-transform: uppercase;
     font-family: var(--fnt-span);
@@ -441,8 +416,7 @@ p {
     /* Corrige o deslocamento vertical */
 }
 
-/* ----------------- Css ----------------- */
-
+/* ------------------------------- CSS ------------------------------- */
 .sobre #css h4 {
     text-transform: uppercase;
     font-family: var(--fnt-span);
@@ -462,8 +436,7 @@ p {
     /* Corrige o deslocamento vertical */
 }
 
-/* ----------------- JavaScript ----------------- */
-
+/* ------------------------------- JAVASCRIPT ------------------------------- */
 .sobre #js h4 {
     text-transform: uppercase;
     font-family: var(--fnt-span);
@@ -483,8 +456,7 @@ p {
     /* Corrige o deslocamento vertical */
 }
 
-/* ----------------- PHP ----------------- */
-
+/* ------------------------------- PHP ------------------------------- */
 .sobre #php h4 {
     text-transform: uppercase;
     font-family: var(--fnt-span);
@@ -504,8 +476,7 @@ p {
     /* Corrige o deslocamento vertical */
 }
 
-/* ----------------- Python ----------------- */
-
+/* ------------------------------- PYTHON ------------------------------- */
 .sobre #python h4 {
     text-transform: uppercase;
     font-family: var(--fnt-span);
@@ -525,13 +496,7 @@ p {
     /* Corrige o deslocamento vertical */
 }
 
-/* ----------------- html ----------------- */
-
-
-
-
-
-
+/* ------------------------------- PORCENTAGEM ------------------------------- */
 .sobre .box .por {
     position: relative;
     width: 100%;
@@ -542,7 +507,6 @@ p {
     display: block;
     margin-top: 5px;
 }
-
 
 .int ul {
     display: grid;

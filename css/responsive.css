@@ -1,0 +1,77 @@
+/* Estilos para telas muito pequenas (exemplo: smartphones em orientação paisagem) */
+@media (max-width: 480px) {
+    body {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+        max-width: 100%;
+        margin: auto;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .container .esq {
+        clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 0);
+        padding: 20px;
+        border-radius: 0;
+    }
+
+    .container .esq .txt_perfil {
+        width: 100%;
+    }
+
+    .container .esq .txt_perfil .imgBx {
+        width: 100px;
+        height: 100px;
+    }
+
+    .container .esq h2 {
+        font-size: 1em;
+        text-align: center;
+    }
+
+    .container .esq h2 span {
+        font-size: 0.7em;
+    }
+
+    .container .esq .infContato ul li .ico {
+        font-size: 16px;
+    }
+
+    .container .dir {
+        padding: 20px;
+    }
+}
+
+/* Estilos para telas pequenas (exemplo: smartphones em orientação retrato) */
+@media (min-width: 481px) and (max-width: 576px) {
+    /* Adicione estilos específicos para telas pequenas aqui */
+}
+
+/* Estilos para telas médias (exemplo: tablets em orientação retrato) */
+@media (min-width: 577px) and (max-width: 768px) {
+    /* Adicione estilos específicos para telas médias aqui */
+}
+
+/* Estilos para telas médias (exemplo: tablets em orientação paisagem) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* Adicione estilos específicos para telas médias aqui */
+}
+
+/* Estilos para telas grandes (exemplo: laptops e monitores desktop) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    /* Adicione estilos específicos para telas grandes aqui */
+}
+
+/* Estilos para telas muito grandes (exemplo: monitores widescreen) */
+@media (min-width: 1441px) and (max-width: 1920px) {
+    /* Adicione estilos específicos para telas muito grandes aqui */
+}
+
+/* Estilos para telas ultragrandes (exemplo: monitores 4K) */
+@media (min-width: 1921px) {
+    /* Adicione estilos específicos para telas ultragrandes aqui */
+}
